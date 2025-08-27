@@ -38,7 +38,7 @@
                     class="list-none flex flex-col gap-[10px] lg:flex-row lg:mr-[60px] justify-around items-center lg:gap-[20px]">
                     <li
                         class="w-[123px] h-[52px] flex gap-[10px] justify-center items-center bg-[#edfff1] rounded-[50px] border-none">
-                        <span class="font-bold">0</span><img src="assets/heart.png" class="w-[30px] h-[30px]" alt="">
+                        <span class="font-bold" id="curHeart">0</span><img src="assets/heart.png" class="w-[30px] h-[30px]"  alt="">
                     </li>
                     <li
                         class="w-[106px] h-[52px] flex gap-[10px] justify-center items-center bg-[#edfff1] rounded-[50px] border-none">
@@ -74,7 +74,7 @@
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] flex items-center justify-center">
                                 <img src="assets/emergency.png" class="w-[32px] h-[32px]" alt="">
                             </div>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart cursor-pointer favourite" id="fav1"></i>
                         </div>
                         <p class="font-bold text-[24px] mb-[2px]">National Emergency Number</p>
                         <p class="text-[18px] text-[#808080] mb-[24px]">National Emergency</p>
@@ -85,10 +85,10 @@
                         </div>
                         <div class="flex justify-center gap-2">
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] border-[1px] text-[#5c5c5c] box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] hover:bg-black hover:text-white rounded-[12px] border-[1px] text-[#5c5c5c] box-border cursor-pointer"><i
                                     class="fa-solid fa-copy mr-[6px]"></i><span>Copy</span></button>
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] border-none rounded-[12px]  text-white box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] hover:bg-[#808080]  border-none rounded-[12px]  text-white box-border cursor-pointer"><i
                                     class="fa-solid fa-phone mr-[6px]"></i><span>Call</span></button>
                         </div>
                     </div>
@@ -101,21 +101,21 @@
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] flex items-center justify-center">
                                 <img src="assets/police.png" class="w-[32px] h-[32px]" alt="">
                             </div>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart cursor-pointer favourite" id="fav2"></i>
                         </div>
                         <p class="font-bold text-[24px] mb-[2px]">Police Helpline Number</p>
                         <p class="text-[18px] text-[#808080] mb-[24px]">Police</p>
                         <p class="text-[32px] font-bold mb-[8px]">999</p>
                         <div
-                            class="text-[#808080] bg-[#F2F2F2] rounded-[9999px] w-[53px] h-[37px] flex justify-center items-center mb-[24px]">
+                            class="text-[#808080] bg-[#F2F2F2] rounded-[9999px] w-[60px] h-[37px] flex justify-center items-center mb-[24px]">
                             Police
                         </div>
                         <div class="flex justify-center gap-2">
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] border-[1px] text-[#5c5c5c] box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] hover:bg-black hover:text-white  rounded-[12px] border-[1px] text-[#5c5c5c] box-border cursor-pointer"><i
                                     class="fa-solid fa-copy mr-[6px]"></i><span>Copy</span></button>
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] border-none rounded-[12px]  text-white box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] hover:bg-[#808080] border-none rounded-[12px]  text-white box-border cursor-pointer"><i
                                     class="fa-solid fa-phone mr-[6px]"></i><span>Call</span></button>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] flex items-center justify-center">
                                 <img src="assets/fire-service.png" class="w-[32px] h-[32px]" alt="">
                             </div>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart cursor-pointer favourite" id="fav3"></i>
                         </div>
                         <p class="font-bold text-[24px] mb-[2px]">Fire Service Number</p>
                         <p class="text-[18px] text-[#808080] mb-[24px]">Fire Service</p>
@@ -139,10 +139,10 @@
                         </div>
                         <div class="flex justify-center gap-2">
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] border-[1px] text-[#5c5c5c] box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] hover:bg-black hover:text-white rounded-[12px] border-[1px] text-[#5c5c5c] box-border cursor-pointer"><i
                                     class="fa-solid fa-copy mr-[6px]"></i><span>Copy</span></button>
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] border-none rounded-[12px]  text-white box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] hover:bg-[#808080] border-none rounded-[12px]  text-white box-border cursor-pointer"><i
                                     class="fa-solid fa-phone mr-[6px]"></i><span>Call</span></button>
                         </div>
                     </div>
@@ -155,21 +155,21 @@
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] flex items-center justify-center">
                                 <img src="assets/ambulance.png" class="w-[32px] h-[32px]" alt="">
                             </div>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart cursor-pointer favourite" id="fav4"></i>
                         </div>
                         <p class="font-bold text-[24px] mb-[2px]">Ambulance Service</p>
                         <p class="text-[18px] text-[#808080] mb-[24px]">Ambulance</p>
                         <p class="text-[32px] font-bold mb-[8px]">1994-999999</p>
                         <div
-                            class="text-[#808080] bg-[#F2F2F2] rounded-[9999px] w-[53px] h-[37px] flex justify-center items-center mb-[24px]">
+                            class="text-[#808080] bg-[#F2F2F2] rounded-[9999px] w-[60px] h-[37px] flex justify-center items-center mb-[24px]">
                             Health
                         </div>
                         <div class="flex justify-center gap-2">
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] border-[1px] text-[#5c5c5c] box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] hover:bg-black hover:text-white rounded-[12px] border-[1px] text-[#5c5c5c] box-border cursor-pointer"><i
                                     class="fa-solid fa-copy mr-[6px]"></i><span>Copy</span></button>
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] border-none rounded-[12px]  text-white box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] hover:bg-[#808080] border-none rounded-[12px]  text-white box-border cursor-pointer"><i
                                     class="fa-solid fa-phone mr-[6px]"></i><span>Call</span></button>
                         </div>
                     </div>
@@ -182,7 +182,7 @@
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] flex items-center justify-center">
                                 <img src="assets/emergency.png" class="w-[32px] h-[32px]" alt="">
                             </div>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart cursor-pointer favourite" id="fav5"></i>
                         </div>
                         <p class="font-bold text-[24px] mb-[2px]">Women & Child Helpline</p>
                         <p class="text-[18px] text-[#808080] mb-[24px]">Women & Child Helpline</p>
@@ -193,10 +193,10 @@
                         </div>
                         <div class="flex justify-center gap-2">
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] border-[1px] text-[#5c5c5c] box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] hover:bg-black hover:text-white border-[1px] text-[#5c5c5c] box-border cursor-pointer"><i
                                     class="fa-solid fa-copy mr-[6px]"></i><span>Copy</span></button>
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] border-none rounded-[12px]  text-white box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] hover:bg-[#808080] border-none rounded-[12px]  text-white box-border cursor-pointer"><i
                                     class="fa-solid fa-phone mr-[6px]"></i><span>Call</span></button>
                         </div>
                     </div>
@@ -209,7 +209,7 @@
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] flex items-center justify-center">
                                 <img src="assets/emergency.png" class="w-[32px] h-[32px]" alt="">
                             </div>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart cursor-pointer favourite" id="fav6"></i>
                         </div>
                         <p class="font-bold text-[24px] mb-[2px]">Anti-Corruption Helpline</p>
                         <p class="text-[18px] text-[#808080] mb-[24px]">Anti-Corruption</p>
@@ -220,10 +220,10 @@
                         </div>
                         <div class="flex justify-center gap-2">
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] border-[1px] text-[#5c5c5c] box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] hover:bg-black hover:text-white border-[1px] text-[#5c5c5c] box-border cursor-pointer"><i
                                     class="fa-solid fa-copy mr-[6px]"></i><span>Copy</span></button>
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] border-none rounded-[12px]  text-white box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] hover:bg-[#808080] border-none rounded-[12px]  text-white box-border cursor-pointer"><i
                                     class="fa-solid fa-phone mr-[6px]"></i><span>Call</span></button>
                         </div>
                     </div>
@@ -236,21 +236,21 @@
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] flex items-center justify-center">
                                 <img src="assets/emergency.png" class="w-[32px] h-[32px]" alt="">
                             </div>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart cursor-pointer favourite" id="fav7"></i>
                         </div>
                         <p class="font-bold text-[24px] mb-[2px]">Electricity Helpline</p>
                         <p class="text-[18px] text-[#808080] mb-[24px]">Electricity Outage</p>
                         <p class="text-[32px] font-bold mb-[8px]">16216</p>
                         <div
-                            class="text-[#808080] bg-[#F2F2F2] rounded-[9999px] w-[53px] h-[37px] flex justify-center items-center mb-[24px]">
+                            class="text-[#808080] bg-[#F2F2F2] rounded-[9999px] w-[80px] h-[37px] flex justify-center items-center mb-[24px]">
                             Electricity
                         </div>
                         <div class="flex justify-center gap-2">
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] border-[1px] text-[#5c5c5c] box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] hover:bg-black hover:text-white border-[1px] text-[#5c5c5c] box-border cursor-pointer"><i
                                     class="fa-solid fa-copy mr-[6px]"></i><span>Copy</span></button>
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] border-none rounded-[12px]  text-white box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] hover:bg-[#808080] border-none rounded-[12px]  text-white box-border cursor-pointer"><i
                                     class="fa-solid fa-phone mr-[6px]"></i><span>Call</span></button>
                         </div>
                     </div>
@@ -263,7 +263,7 @@
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] flex items-center justify-center">
                                 <img src="assets/emergency.png" class="w-[32px] h-[32px]" alt="">
                             </div>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart cursor-pointer favourite" id="fav8"></i>
                         </div>
                         <p class="font-bold text-[24px] mb-[2px]">Brac Helpline</p>
                         <p class="text-[18px] text-[#808080] mb-[24px]">Brac</p>
@@ -274,14 +274,15 @@
                         </div>
                         <div class="flex justify-center gap-2">
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] border-[1px] text-[#5c5c5c] box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] hover:bg-black hover:text-white border-[1px] text-[#5c5c5c] box-border cursor-pointer"><i
                                     class="fa-solid fa-copy mr-[6px]"></i><span>Copy</span></button>
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] border-none rounded-[12px]  text-white box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] hover:bg-[#808080] border-none rounded-[12px]  text-white box-border cursor-pointer"><i
                                     class="fa-solid fa-phone mr-[6px]"></i><span>Call</span></button>
                         </div>
                     </div>
                 </div>
+                <!-- number9 -->
                 <div
                     class="rounded-[12px] bg-white shadow-xl w-full max-w-[436px] h-auto flex justify-center items-center box-border p-8">
                     <div class="w-full">
@@ -289,7 +290,7 @@
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] flex items-center justify-center">
                                 <img src="assets/emergency.png" class="w-[32px] h-[32px]" alt="">
                             </div>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart cursor-pointer" id="fav9"></i>
                         </div>
                         <p class="font-bold text-[24px] mb-[2px]">Bangladesh Railway Helpline</p>
                         <p class="text-[18px] text-[#808080] mb-[24px]">Bangladesh Railway</p>
@@ -300,10 +301,10 @@
                         </div>
                         <div class="flex justify-center gap-2">
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] border-[1px] text-[#5c5c5c] box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] border-[#d4d6d5] rounded-[12px] hover:bg-black hover:text-white border-[1px] text-[#5c5c5c] box-border cursor-pointer"><i
                                     class="fa-solid fa-copy mr-[6px]"></i><span>Copy</span></button>
                             <button
-                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] border-none rounded-[12px]  text-white box-border"><i
+                                class="w-full max-w-[187.33px] h-[40px] bg-[#00A63E] hover:bg-[#808080] border-none rounded-[12px]  text-white box-border cursor-pointer"><i
                                     class="fa-solid fa-phone mr-[6px]"></i><span>Call</span></button>
                         </div>
                     </div>
@@ -316,7 +317,7 @@
                         <i class="fa-regular fa-clock"></i>
                         <p class="text-[16px] font-bold">Call History</p>
                     </div>
-                    <button class="w-full max-w-[114px] h-[52px] bg-[#00A63E] text-white rounded-[50px] border-none font-semibold">Clear</button>
+                    <button class="w-full max-w-[114px] h-[52px] bg-[#00A63E] hover:bg-[#808080] text-white rounded-[50px] border-none font-semibold cursor-pointer">Clear</button>
                 </div>
                 <div class="call-container">
                         
@@ -324,6 +325,7 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
