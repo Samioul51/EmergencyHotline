@@ -3,7 +3,8 @@
 const favs=document.querySelectorAll(".favourite");
 
 for(const fav of favs){
-        fav.addEventListener("click",function(e){
+    fav.addEventListener("click",function(e){
+        e.preventDefault();
         const curHeart=document.getElementById("curHeart");
         let heartAmount=parseInt(curHeart.innerText);
         heartAmount++;
@@ -77,5 +78,22 @@ for(const call of calls){
         }
         else
             alert("You don't have enough coins. You need at least 20 coins to make a call.");
+    });
+}
+
+//Challenge Tasks
+
+const copyBtn=document.querySelectorAll(".copyCount");
+const curCopyCount=document.querySelector(".curCopyCount");
+
+console.log(copyBtn);
+console.log(curCopyCount);
+
+for(const copy of copyBtn){
+    copy.addEventListener("click",function(e){
+        e.preventDefault();
+        let copyAmount=parseInt(curCopyCount.innerText);
+        copyAmount++;
+        curCopyCount.innerText=copyAmount.toString();
     });
 }
