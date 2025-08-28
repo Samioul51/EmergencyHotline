@@ -95,5 +95,9 @@ for(const copy of copyBtn){
         let copyAmount=parseInt(curCopyCount.innerText);
         copyAmount++;
         curCopyCount.innerText=copyAmount.toString();
+        const superParent=copy.parentElement.parentElement;
+        const number=superParent.querySelector(".number");
+        alert("Copied Number: "+number.innerText);
+        navigator.clipboard.writeText(number.innerText);
     });
 }
